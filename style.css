@@ -60,7 +60,7 @@ nav a {
 
 /* header related styles */
 .header {
-    background: #FFF8F3;
+    background: rgba(168, 95, 43, 0.188);
     /* background-color: #474747; */
     background-image: url('./images/header_bg.png'), url('./images/developer.png');
     background-repeat: no-repeat;
@@ -121,7 +121,8 @@ main section {
     padding: 130px;
     border-radius: 10px;
     /* background-color: #757575; */
-    margin: 130px;
+    background-color: rgba(168, 95, 43, 0.188);
+    margin: 130px 0;
 }
 
 .about-info {
@@ -149,7 +150,7 @@ main section {
     /* border: 5px solid red; */
     padding: 30px;
     border-radius: 5px;
-    background: #FFF;
+    background: rgba(168, 95, 43, 0.188);
     box-shadow: 0px 6px 50px 0px rgb(0, 0, 0, 0.06);
     /* margin-right: 30px;
     text-align: center; */
@@ -186,7 +187,7 @@ main section {
 
 footer {
     display: flex;
-    background: #FFF8F3;
+    background: rgba(168, 95, 43, 0.188);
     padding: 130px 100px;
     margin-top: 100px;
     gap: 100px;
@@ -206,4 +207,65 @@ textarea {
     /* background-color: #FFF; */
     /* border: 0; */
     width: 100%;
+}
+
+/* response */
+@media screen and (max-width:576px) {
+
+    .header {
+        background-image: none;
+    }
+
+    .skill-container,
+    .banner,
+    /* .header, */
+    /* .nav-title, */
+    .nav,
+    .nav>h3,
+    ul,
+    .resume-container,
+    .about-info-container,
+    footer {
+        flex-direction: column;
+    }
+
+    nav>ul {
+        gap: 10px;
+    }
+
+    .banner .profile {
+        width: 100%;
+    }
+
+    .banner,
+    #what-i-do {
+        padding: 20px;
+    }
+
+    .btn-primary {
+        margin-bottom: 25px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    .about {
+        padding: 10px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .contact {
+        width: 80%;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width:960px) {
+    footer {
+        padding: 30px;
+    }
 }
